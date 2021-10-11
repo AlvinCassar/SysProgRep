@@ -2,31 +2,22 @@
 #include <stdlib.h>
 
 int main(void) {
-    int a;
-    int b;
-    char buf[1024];
+    
+    int i = 0;
+    int arr[11];
+    int large = 0;
 
-    do{
-        printf("Enter first digit: ");
-        if(!fgets(buf, 1024, stdin))
-            return 1;
+    for(i = 0; i < 11; i++){
 
-        a = atoi(buf);
-    }while(a == 0);
+        printf("\nEnter Number %d:", i );
 
-    printf("You entered %d. \n" ,a);
+        scanf("%d", &arr[i]);
 
-    do{
-        printf("Enter first digit: ");
-        if(!fgets(buf, 1024, stdin))
-            return 1;
+        if(large < arr[i])
+            large = arr[i];
+        
+    }
 
-        b = atoi(buf);
-    }while(b == 0);
-
-    printf("You entered %d. \n" ,b);
-
-    int sum = a+b;
-    printf("Sum of a and b = ", sum);
-
+    printf(" \nLargest Number from list: %d", large, "\n");
+    return 0;
 }
