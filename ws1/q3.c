@@ -16,7 +16,7 @@ int main(void) {
         }
     }
 
-    printf("\nLargest Num: %d", larg);
+    printf("\nLargest num: %d", larg);
     return 0;
 }
 
