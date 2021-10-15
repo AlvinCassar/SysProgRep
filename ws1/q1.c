@@ -3,21 +3,14 @@
 
 int main(void) {
     
-    int i = 0;
-    int arr[11];
-    int large = 0;
+    int num1;
+    int num2;
 
-    for(i = 0; i < 11; i++){
+    printf("Please enter 1st number:");
+    scanf("%d", num1);
+    printf("Please enter 2nd number:");
+    scanf("%d", num2);
 
-        printf("\nEnter Number %d:", i );
-
-        scanf("%d", &arr[i]);
-
-        if(large < arr[i])
-            large = arr[i];
-        
-    }
-
-    printf(" \nLargest Number from list: %d", large, "\n");
+    
     return 0;
 }
