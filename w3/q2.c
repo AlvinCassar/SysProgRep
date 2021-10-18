@@ -3,7 +3,7 @@
 
 int main(void) {
 
-    int count, tot, i;
+    int tot, i;
     float avg, nums;
 
     tot = 0;
@@ -23,7 +23,7 @@ int main(void) {
     avg = tot/i;
 
     printf("Total nums: %d\n", i);
-    printf("Total sum: %f\n", tot);
+    printf("Total sum: %d\n", tot);
     printf("Avg num: %.2f\n", avg);
 
     return 0;
