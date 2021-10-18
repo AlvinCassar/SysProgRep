@@ -8,11 +8,10 @@
 
 int main(void) {
 
-    int i = 1;
     int arr[11];
     int larg = 0;
     
-    for(i; i < 11; i++){
+    for(int i = 1; i < 11; i++){
         printf("\nPlease enter number %d : ", i);
         scanf("%d", &arr[i]);
 
