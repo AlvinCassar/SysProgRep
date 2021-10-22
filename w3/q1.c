@@ -1,17 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void) {
+int main(int argc, char *argv[]) {
 
     int num1, num2, sml;
 
-    printf("Please enter first number:");
-    scanf("%d", &num1);
-    printf("Please enter seconds number:");
-    scanf("%d", &num2);
+    num1 = atoi(argv[1]);
+    num2 = atoi(argv[2]);
 
     sml = num1<num2?num1:num2;
 
-    printf("\nSmallest Num is: %d" , sml);
+    printf("\nSmallest Num is: %d \n" , sml);
     return 0;
 }

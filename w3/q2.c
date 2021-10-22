@@ -1,25 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void) {
+int main(int argc, char *argv[]) {
 
     int tot, i;
-    float avg, nums;
+    float avg;
 
     tot = 0;
-    printf("\n\n\nEnter -1 to stop \n");
-    for (i = 0; i < 1000; i++)
-    {
-        printf("Please enter number:");
-        scanf("%f", &nums);
-
-        if (nums == -1){
-            printf("--Exiting--\n");
-            break;
-        }
-        tot = tot + nums;
+    
+    for (i = 0; i < argc-1; i++){ 
+        tot += atoi(argv[i+1]);
     }
-
+    
     avg = tot/i;
 
     printf("Total nums: %d\n", i);
