@@ -4,15 +4,8 @@
 int main(int argc, char *argv[]) {
 
     if(argc < 3){
-        printf("Not all arguments given");
+        printf("Not all arguments given\n");
         return -2;
-    }
-
-    if(argv[1] == NULL || argv[2] == NULL){
-
-        printf("No argument for weight given");
-
-        return -1;
     }
 
     float weight, height, bmi;
